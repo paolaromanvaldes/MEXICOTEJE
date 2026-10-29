@@ -17,15 +17,15 @@ header ul li {
     left: 50%;
     font-family: 'Abril Fatface', Georgia, Times, serif;
     margin: 5px;
-    
 
-
-
+}
+.invisible {
+    display: none;
 }
 
 header h1{
     font-family: 'Abril Fatface', Georgia, Times, serif;
-    font-size: 50px;
+    font-size: 3rem;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 3%;
@@ -33,12 +33,21 @@ header h1{
 
 .info {
     font-family: 'Merriweather', Georgia, Times, serif;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: rgb(255, 255, 255);
     text-align: justify;
     padding: 3%;
 
 
+
+}
+
+.info h3 {
+    font-family: 'Abril Fatface', Georgia, Times, serif;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 3%;
 }
 
 .imageninfo {
@@ -69,9 +78,17 @@ header ul {
     float: right;
 }
 
+.sobremi h3 {
+    font-family: 'Abril Fatface', Georgia, Times, serif;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 3%;
+}
+
 .sobremi {
     font-family: 'Merriweather', Georgia, Times, serif;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: rgb(255, 255, 255);
     text-align: justify;
     padding: 3%;
@@ -84,6 +101,91 @@ header ul {
     margin: 10px  15px 20px;
     float: left;
 }
+
+.clases {
+    font-family: 'Merriweather', Georgia, Times, serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    padding: 3%;
+}
+
+.clasesgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 3%;
+}
+
+.clases h3 {
+    font-family: 'Abril Fatface', Georgia, Times, serif;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 3%;
+}
+
+.clases img {
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px  15px 20px;
+    float: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.inspo {
+
+    font-family: 'Abril Fatface', Georgia, Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    justify-content: center;
+    margin: 10%;
+}
+
+.artistasgrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 3%;
+    box-sizing: border-box;
+    flex-direction: row;
+    margin-left: 50%;
+}
+
+.artistasgrid img {
+    width: 30rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0;
+    flex-shrink: 0;
+    margin-right: 10%;
+}
+
+@media (max-width: 500px) {
+    .artistasgrid img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+footer {
+    background-color: rgb(208, 84, 154);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
 
 
 html {
